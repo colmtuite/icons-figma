@@ -1,0 +1,41 @@
+.iconList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 8px;
+  padding: 4px;
+  padding-bottom: 16px;
+}
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  color: #333;
+  background: transparent;
+  border: 0;
+  border-radius: 2px;
+  appearance: none;
+  outline: 0;
+}
+.icon:hover {
+  transition: ease-in-out 0.2s;
+  transform: scale(1.2);
+}
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  padding-bottom: 4px;
+}
+.filterContainer > div > div:nth-child(1) {
+  flex-grow: 1;
+}
+.noResults {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.noResults span {
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "radix-icons",
+  "version": "1.0.0",
+  "keywords": [
+    "create-figma-plugin",
+    "figma",
+    "figma-plugin"
+  ],
+  "license": "MIT",
+  "author": "Tekeste Kidanu",
+  "dependencies": {
+    "@create-figma-plugin/ui": "^1.2.2",
+    "@create-figma-plugin/utilities": "^1.2.2",
+    "@radix-ui/react-icons": "^1.0.3",
+    "@stitches/react": "^0.2.2",
+    "preact": "^10.5.14"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^1.2.2",
+    "@create-figma-plugin/tsconfig": "^1.2.2",
+    "@figma/plugin-typings": "^1",
+    "@types/react": "^17.0.14",
+    "typescript": "^4"
+  },
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch"
+  },
+  "figma-plugin": {
+    "id": "radix-icons",
+    "name": "Radix Icons",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx",
+    "relaunchButtons": {
+      "radixIcons": {
+        "name": "Radix Icons",
+        "main": "src/main.ts",
+        "ui": "src/ui.tsx"
+      }
+    }
+  }
+}
