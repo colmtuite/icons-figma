@@ -1,4 +1,4 @@
-# radix-icons
+# radix-icon
 
 ## Development guide
 
